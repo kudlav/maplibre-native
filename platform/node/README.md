@@ -229,7 +229,7 @@ Stylesheets are free to use any protocols, but your implementation of `request` 
 
 ## Listening for log events
 
-The module imported with `require('maplibre-gl-native')` inherits from [`EventEmitter`](https://nodejs.org/api/events.html), and the `NodeLogObserver` will push log events to this. Log messages can have [`class`](https://github.com/maplibre/maplibre-native/blob/node-v2.1.0/include/mbgl/platform/event.hpp#L43-L60), [`severity`](https://github.com/maplibre/maplibre-native/blob/node-v2.1.0/include/mbgl/platform/event.hpp#L17-L23), `code` ([HTTP status codes](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)), and `text` parameters.
+The module imported with `require('maplibre-gl-native')` inherits from [`EventEmitter`](https://nodejs.org/api/events.html), and the `NodeLogObserver` will push log events to this. Log messages can have [`class`](https://github.com/maplibre/maplibre-native/blob/42490d5a8baf53eb81d4a50acd58c4f300e685db/include/mbgl/util/event.hpp#L15-L33), [`severity`](https://github.com/maplibre/maplibre-native/blob/42490d5a8baf53eb81d4a50acd58c4f300e685db/include/mbgl/util/event.hpp#L7-L13), `code` ([HTTP status codes](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)), and `text` parameters.
 
 ```js
 var mbgl = require('@maplibre/maplibre-gl-native');
